@@ -12,8 +12,9 @@
 <body>
   <div class="container mt-3">
     <div class="border rounded p-3 shadow bg-light">
+      <alert class="my-2"></alert>
       <div>
-        <form action="" id="game-setup" class="mb-2">
+        <form action="" id="game-setup" class="my-2">
           <label for="grid-size">Grid Size:</label>
           <input type="number" id="grid-size" name="grid-size">
           <label for="difficulty">Difficulty:</label>
@@ -25,8 +26,7 @@
           <input type="submit" value="Submit">
         </form>
       </div>
-      <alert class="my-2"></alert>
-      <div class="mb-2" id="title">
+      <div class="" id="title">
         <div>
           <h1>Minesweeper</h1>
           <p><em>Flag all of the bombs... 1 wrong step and it's GAME OVER!</em></p>
@@ -36,7 +36,9 @@
           <i class="fa-solid fa-scroll fa-2xl" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="bottom" data-bs-title="Note: The revealed number shows how many bombs are touching that square ie. if its empty, there are 0 bombs in the surrounding 8 squares. Good luck!"></i>
         </div>
       </div>
-      <h3 id="bomb-counter" class=""></h3>
+      <div class="d-flex justify-content-center d-none" id="bomb-counter-container">
+        <h3 id="bomb-counter" class=""></h3>
+      </div>
       <div class="d-flex justify-content-center" id="grid-div">
         <table class="shadow">
           <tbody id="minesweeper" class="">
