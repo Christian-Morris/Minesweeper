@@ -56,12 +56,17 @@ table #minesweeper td {
 #bomb-counter {
   border: 1px solid blueviolet;
   border-radius: 5px;
-  box-shadow: 2px 2px 3px lawngreen;
-  width: 250px;
+  padding: 5px;
   text-align: center;
   cursor: pointer;
 }
 
-#bomb-counter:hover {
-  box-shadow: 2px 2px 6px limegreen;
+.alert {
+  margin-bottom: 0 !important;
+}
+
+#title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
