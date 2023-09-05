@@ -12,6 +12,19 @@
 <body>
   <div class="container mt-3">
     <div class="border rounded p-3 shadow bg-light">
+      <div class="" id="title">
+        <div>
+          <h1>Minesweeper</h1>
+          <p><em>Flag all of the bombs... 1 wrong step and it's GAME OVER!</em></p>
+        </div>
+        <div>
+          <i class="fa-solid fa-gamepad fa-2xl" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="left" data-bs-title="Left click: Reveal tile | Right click (1): Flag tile as a bomb | Right click (2): Question mark the tile"></i>
+          <i class="fa-solid fa-scroll fa-2xl" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="bottom" data-bs-title="Note: The revealed number shows how many bombs are touching that square ie. if its empty, there are 0 bombs in the surrounding 8 squares. Good luck!"></i>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center d-none" id="bomb-counter-container">
+        <h3 id="bomb-counter" class=""></h3>
+      </div>
       <alert class="my-2"></alert>
       <div>
         <form action="" id="game-setup" class="my-2">
@@ -25,19 +38,6 @@
           </select>
           <input type="submit" value="Submit">
         </form>
-      </div>
-      <div class="" id="title">
-        <div>
-          <h1>Minesweeper</h1>
-          <p><em>Flag all of the bombs... 1 wrong step and it's GAME OVER!</em></p>
-        </div>
-        <div>
-          <i class="fa-solid fa-gamepad fa-2xl" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="left" data-bs-title="Left click: Reveal tile | Right click (1): Flag tile as a bomb | Right click (2): Question mark the tile"></i>
-          <i class="fa-solid fa-scroll fa-2xl" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="bottom" data-bs-title="Note: The revealed number shows how many bombs are touching that square ie. if its empty, there are 0 bombs in the surrounding 8 squares. Good luck!"></i>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center d-none" id="bomb-counter-container">
-        <h3 id="bomb-counter" class=""></h3>
       </div>
       <div class="d-flex justify-content-center" id="grid-div">
         <table class="shadow">
