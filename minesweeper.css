@@ -71,3 +71,48 @@ table #minesweeper td {
   justify-content: space-between;
   align-items: center;
 }
+
+#popovers {
+  width: 175px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#game-setup{
+  width: 330px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+#difficulty, #grid-size, #submit {
+  width: 100px;
+  height: 32px;
+  border-radius: 5px;
+  margin: 5px
+}
+
+#submit {
+  border: 2px solid rgba(255, 0, 0, 0.4);
+  color: #878787;
+}
+
+
+#grid-size:in-range, #difficulty:valid {
+  border: 2px solid rgba(0, 128, 0, 0.4);
+}
+.submit-valid{
+  border: 2px solid rgba(0, 128, 0, 0.4) !important;
+  color: black !important;
+}
+
+#grid-size:invalid, #difficulty:invalid {
+  border: 2px solid rgba(255, 0, 0, 0.4);
+  color: #878787;
+}
+
+body {
+  background-color: lightgray !important;
+}
