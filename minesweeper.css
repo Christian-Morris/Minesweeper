@@ -53,13 +53,22 @@ table #minesweeper td {
   background-size: cover;
 }
 
-#bomb-counter {
+#bomb-counter, #timer {
   border: 1px solid blueviolet;
   border-radius: 5px;
   padding: 5px;
   text-align: center;
   display: inline-block;
   margin-bottom: 16px;
+}
+
+#timer {
+  color: red;
+  width: 150px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .alert {
